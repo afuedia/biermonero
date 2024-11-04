@@ -1,0 +1,19 @@
+.chiuj {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.lateral {
+    align-items: start;
+    background-color: black;
+    color: white;
+}
+
+.principal {
+    align-items: end;
+    width: auto;
+    background-color: #171717;
+    color: #aaaaaa;
+}
+
