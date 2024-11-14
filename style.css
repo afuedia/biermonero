@@ -1,19 +1,376 @@
+:root {
+  --font-size-base: 16px; /* Base para pantallas pequeñas */
+  /* Fuentes principales */
+  --font-primary: "Roboto", sans-serif;
+  --font-heading: "Playfair Display", serif;
+  --font-secondary: "Montserrat", sans-serif;
+
+  /* Tamaños de fuentes */
+  --font-size-base: 16px;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 3rem;
+
+  /* Pesos de fuente */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --font-size-base: 18px; /* Base para pantallas medianas */
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --font-size-base: 20px; /* Base para pantallas grandes */
+  }
+}
+
+p,
+li {
+  line-height: 1.5;
+  font-family: var(--font-primary);
+}
+
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+hr {
+  width: 80%;
+  justify-self: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+}
+
+.titolujo {
+  width: 75%;
+  min-width: 250px;
+  justify-content: center;
+  padding-left: 8%;
+}
+
 .chiuj {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 20% 80%;
+  width: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
+/* Lateral izquierdo */
 .lateral {
-    align-items: start;
-    background-color: black;
-    color: white;
+  align-items: center;
+  background-color: black;
+  background-image: url(biero\ -\ copia2.jpg);
+  background-size: cover;
+  color: white;
+  position: sticky;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  width: 500px;
 }
 
+.lateral.oculto {
+  width: auto;
+}
+
+.lateral-izquierdo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  height: 100%;
+  width: 95%;
+  transform: translateX(0);
+}
+
+.lateral-izquierdo.oculto {
+  width: 0;
+  display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  transform: translateX(-100%);
+}
+
+.titolujo.oculto {
+  display: none;
+}
+
+.ligujo.oculto {
+  display: none;
+}
+
+.lateral-retoj {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  height: 100%;
+  margin: 0;
+}
+.lateral-retoj.oculto {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.toggle-button {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+  transition: transform 1s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.toggle-button.oculto {
+  transform: rotate(180deg);
+  transition: transform 1s ease;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active-link {
+  background-color: yelow;
+}
+/* Lateral derecho */
 .principal {
-    align-items: end;
-    width: auto;
-    background-color: #171717;
-    color: #aaaaaa;
+  width: 100%;
+  background-color: #171717;
+  color: #aaaaaa;
+  font-size: 22px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
+.principal.otro {
+  width: 98%;
+}
+
+.principal-emblemo {
+  border: solid black;
+  width: 80%;
+  height: 40%;
+  margin: 40px;
+}
+.principal-titolo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("biero.jpg");
+  width: 100%;
+  height: 280px;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.principal-retumilo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-items: center;
+  height: 75px;
+}
+
+.principal-retumilo > div {
+  background-color: #333333;
+  height: 36px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.principal-retumilo > div > p {
+  text-align: center;
+  justify-self: center;
+}
+
+.principal-korpo {
+  width: 80%;
+  max-width: 25cm;
+  align-self: center;
+  padding: 2%;
+}
+
+.principal > h1,
+h2,
+h3 {
+  color: white;
+  margin: 48px 0;
+}
+
+.principal > p {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 85%;
+  justify-self: center;
+  border-collapse: collapse;
+  table-layout: fixed;
+  box-shadow: 2px 2px 8px #0004;
+}
+thead {
+  background-color: #1b355e;
+  border-color: #1b355e;
+  color: white;
+  border-collapse: separate;
+}
+
+thead th:nth-child(1) {
+  width: 25%;
+}
+
+thead th:nth-child(2) {
+  width: 65%;
+}
+
+thead th:nth-child(3) {
+  width: 10%;
+}
+
+td {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+td:first-child {
+  font-weight: 1000;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+tbody tr:nth-child(odd) {
+  background-color: #171717;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #1f1f1f;
+}
+
+.ligujo {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 80%;
+  justify-content: start;
+  justify-items: end;
+  padding-left: 5%;
+  overflow-y: auto;
+}
+
+.ligujo summary {
+  background-color: #171717;
+  margin: 1%;
+  width: 100%;
+  height: 36px;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+}
+.ligujo a {
+  background-color: #17171780;
+  margin: 1%;
+  width: auto;
+  height: 36px;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  font-family: var(--font-secondary);
+}
+
+details {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+summary {
+  cursor: pointer;
+}
+
+summary:hover {
+  background-color: #a52a2a;
+}
+
+.ligujo a:hover {
+  background-color: brown;
+}
+
+details[open] summary {
+  background-color: brown;
+}
+/* Flecha en contenido colapsado */
+details summary::marker {
+  content: "⮞";
+  color: indigo;
+  font-size: 1.5rem;
+}
+
+/* Flecha en contenido desplegado */
+details[open] summary::marker {
+  content: "⮟ ";
+}
+.enlaces {
+  position: relative;
+}
+
+.titolo {
+  text-align: center;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <meta name="page-id" content="hervido" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekto Biero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chiuj" id="chiuj">
+        <div class="lateral" id="lateral">
+            <div class="lateral-retoj" id="lateralRetoj">
+              <button onclick="ocultarIndice()" class="toggle-button" id="boton">
+                |←
+              </button>
+            </div>
+            <div class="lateral-izquierdo" id="lateral-izquierdo">
+              <div class="titolujo" id="titolujo">
+                <h1 class="titolo">Apuntes sobre elaboración de cerveza</h1>
+              </div>
+              <div class="ligujo" id="ligujo">
+                <details name="acordeon">
+                  <summary>Ingredientes</summary>
+    
+                  <a href="fermentables.html">Fermentables</a>
+                  <a href="lupulo.html">Lúpulo</a>
+                  <a href="agua.html">Agua</a>
+                  <a href="levadura.html">Levadura</a>
+                </details>
+                <details open name="acordeon">
+                  <summary>Procesos</summary>
+                  <a href="molienda.html">Molienda</a>
+                  <a href="macerado.html">Macerado</a>
+                  <a href="hervido.html">Hervido</a>
+                  <a href="fermentacion.html">Fermentación</a>
+                  <a href="embotellado.html">Embotellado</a>
+                  <a href="limpieza.html">Limpieza</a>
+                </details>
+                <details name="acordeon">
+                  <summary><p>Diseño de recetas</p></summary>
+                </details>
+                <summary>Equipo</summary>
+              </div>
+            </div>
+          </div>
+  
+        <div class="principal" id="principal">
+            <div class="principal-titolo">
+                <div class="principal-emblemo"></div>
+                <h1>Hervido</h1>
+            </div>
+            <div class="principal-retumilo">
+                <div><p>Anterior</p></div>
+                <div><p><a href="index.html">Home</a></p></div>
+                <div><p>Siguiente</p></div>
+            </div>
+            <div class="principal-korpo">
+                <p>El proceso que a continuación será descrito, el hervido, a priori podría parecer algo sencillo si lo comparamos por ejemplo con el macerado,
+                    pero realmente durante el hervido tendrán lugar interacciones complejas que influyen en la composición final del mosto y en la calidad de la cerveza.
+                    Dichas reacciones se producen no solo durante el tiempo de hervido, sino también previamente, mientras el mosto alcanza la temperatura
+                    de hervido, y también mientras permanece caliente una vez acabado el hervido.</p>
+
+                <h2 id="objetivo-hervido"><a href="#objetivo-hervido">¿Por qué hervir el mosto?</a></h2>
+                <p>A continuación te lo explico</p>
+                <h3>Estabilización del mosto</h3>
+                <p>Conseguir un mosto estable, que no sufra transformaciones no deseadas con el paso del tiempo, es algo deseable. Podemos señalar diferentes tipos de estabilidades:
+                    <ul><li>Estabilidad biológica: Asegurarse que ningún microorganismo sobreviva a esta etapa</li>
+                    <li>Estabilidad bioquímica: Detener cualquier actividad enzimática de la malta o de enzimas exógenas</li>
+                    <li>Estabilidad coloidal: Reducir la materia nitrogenada a través de la termocoagulación de las mismas</li></ul></p>
+                
+                <p>Esta última es  muy importante, por lo que procedemos a desarrollar algunos aspectos de la misma</p>
+                <h4>Estabilidad coloidal</h4>
+                <p>La estabilidad coloidal se logrará a traves de dos variables</p>
+                
+                <h5>La duración de la ebullición</h5>
+                <p>Comunmente de entre una a dos horas.
+                    <ul><li>Si hacemos una cerveza clara de entre 11º a 13ºP, entre 1 hora y una hora y media.</li>
+                    <li>Si hacemos cervezas de más densidad y color, de hora y media a 2 horas</li>
+                    <li>Más de 2 horas para cervezas oscuras, aunque se puede reducir si la estrategia de coloración pasa por el uso de maltas oscuras</li></ul>
+                    </p>
+                <h5>La intensidad de la ebullición</h5>
+                <p>Debe ser intensa y vigorosa </p>
+                
+                <h5>La temperatura</h5>
+                <p>Debe ser intensa y vigorosa </p>
+
+                <h3>Estrés térmico</h3>
+                <p>El tiempo y la temperatura de hervido provocan en el mosto un fuerte estrés térmico, al que podriamos referirnos como "carga térmica", y que  tiene una gran influencia en la estabilidad sensorial de la cerveza. Esta carga térmica se mide a través del "índice de ácido tiobarbitúrico", y la tendencia
+                    es tratar de disminuir al máximo este índice a través de prácticas tales como reducción del tiempo de cocción, reducciónd de los gradientes de temperatura, intensidad moderada de la ebullición...
+                </p>
+                
+                <h5>Oxidación</h5>
+                <p>La presencia de oxígeno inhibe la coagulación de las proteinas, peor también oxida los taninos y los vuelven más precipitables, por 
+                    lo que se entiende que una oxidación moderada podría contribuir a eliminar sustancias complejas. La oxidación de los lípidos también
+                contribuye al desarrollo de sabores no deseados, por lo que la tendencia actual es a trabajar en sistemas cerrados. </p>
+
+                <h5>pH</h5>
+                <p>A un pH de entre 5.1 y 5.3 se consigue una buena precipitación de materias nitrogenadas, aumentando el tamaño de las partículas coaguladas, dado que se alcanza el punto isoeléctrico de las proteinas. Además, estos valores de pH bajos contienen el aumento de la coloración del mosto y a 
+                    obtener un amargor de mayor calidad.  </p>
+
+
+                
+                
+                
+                
+                <h3>Desarrollo del sabor</h3>
+                <p>Las modificaciones en el sabor que se producen durante el hervido se debe: 
+                    <h4>Eliminación de sustancias volátiles</h4>
+                    <p>Debemos asegurarnos de que la evaporación no sea inferior al 6% para garantizar que sustancias indeseables (DMS-dimetil-sulfuro-,
+                        aldehilos, compuestos azufrados...) sean eliminadas mediante la ebullición intensa.
+                    </p>
+                    <h4>Disolución de compuestos del lúpulo</h4>
+                    <p>Es el elemento que mayor modificación del sabor causa. Abordaremos más adelante los detalles.
+                    </p>
+                    <h4>Caramelización de azúcares</h4>
+                    <p>Sumada a la interacción entre azúcares y proteinas (Reacciones de Maillard), también influye en el sabor.</p>
+                
+                <h3>Aumento de la concentración</h3>
+                    <p>El hervido y la evaporación nos van a permitir alcanzar una mayor concentración de azúcares en nuestro mosto.</p>
+
+                <h3>Control de precipitado</h3>
+                <p>Cuando hablamos de control de precipitado hacemos referencia a una técnica que nos permite monitorizar la buena marcha del proceso.
+                    Al acabar el hervido, se extrae una muestra del mosto en un vaso de precipitado y despue´s de algunos minutos de reposo se deberá
+                observar los coagulos formados: deben ser nítidos y gruesos, y el mosto debe ser claro y brillante. Esto es indicativo de un hervido 
+            exitoso y presagio de una buena estabilidad coloidal de la futura cerveza. </p>
+
+                
+                <h2 id="lupulado"><a href="#lupulado">El lupulado</a></h2>
+                <p>Durante el hervido se añade lúpulo al mosto. Esto imprimirá uno de los caracteres más peculiares de la cerveza, su amargor. Este amargor 
+                    estará determinado por los alfa-ácidos contenidos en las resinas del lúpulos, las cuales con la acción del hervor se disolverán en el mosto.
+                    Otro compuesto que contribuye al amargor son las humulonas.
+                </p>
+                <h3>Métodos de adición del lúpulo</h3>
+                <p>El lúpulo será añadido durante todo el preoceso de hervido, resultando en un efecto diferente en función del momento en el que hagamos la adición.</p>
+                
+                
+
+                <h2 id="los-adjuntos"><a href="#los-adjuntos">Los adjuntos</a></h2>
+                <p>Cuando en la elaboración de cerveza se emplea alguna fuente de azucares alternativa a la malta se dice que se está
+                    añadiendo un adjunto. Podemos diferenciar dos grandes tipos:
+                    <ul>
+                        <li>Adjunto de macerado: Principalmente cereales sin maltear</li>
+                        <li>Adjunto de olla: Principalmente siropes o azúcares</li>
+                    </ul>
+                </p>
+                <h3>Adjuntos de macerado</h3>
+                    <table>
+                        <thead>
+                            <th>Tipo</th>
+                            <th>Descripción</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Arroz</td>
+                                <td>El uso del arroz redunda en una cerveza más clara, con un sabor más neutro y en general más bebible.</td>
+                            </tr>
+                            <tr>
+                                <td>Maiz</td>
+                                <td>El efecto de su uso es similar al del arroz, aunque en este caso puede aportar un sabor dulzón característico</td>
+                            </tr>
+                        </tbody>
+                    
+                    </table>
+                    <h3>Adjuntos de olla</h3>
+                    <table>
+                        <thead>
+                            <th>Tipo</th>
+                            <th>Descripción</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maltodextrina</td>
+                                <td>La maltodextrina es un azucar <strong>no fermentable</strong> que puede utilizarse como reemplazo de la avena y  la malta carapils.
+                                    Beneficia la retencion de espuma y aporta sensacion plena en boca y cuerpo, pero sin aportar dulzor. Se recomienda un uso del 2% 
+                                    para mejorar retencion de espuma y sensacion en boca. Se agrega en los últimos 10/15min finales de hervor</td>
+                            </tr>
+                            <tr>
+                                <td>Lactosa</td>
+                                <td>Azucar <strong>no fermentable</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Dextrosa</td>
+                                <td>El efecto de su uso es similar al del arroz, aunque en este caso puede aportar un sabor dulzón característico</td>
+                            </tr>
+                            <tr>
+                                <td>Candy</td>
+                                <td>Un azucar muy empleado en la tradición belga</td>
+                            </tr>
+                            <tr>
+                                <td>Miel</td>
+                                <td>No es algo habitual, pero se puede emplear miel como adjunto</td>
+                            </tr>
+                        </tbody>
+                    
+                    </table>
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

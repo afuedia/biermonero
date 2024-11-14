@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="page-id" content="molienda" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekto Biero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="chiuj" id="chiuj">
+      <div class="lateral" id="lateral">
+        <div class="lateral-retoj" id="lateralRetoj">
+          <button onclick="ocultarIndice()" class="toggle-button" id="boton">
+            |←
+          </button>
+        </div>
+        <div class="lateral-izquierdo" id="lateral-izquierdo">
+          <div class="titolujo" id="titolujo">
+            <h1 class="titolo">Apuntes sobre elaboración de cerveza</h1>
+          </div>
+          <div class="ligujo" id="ligujo">
+            <details name="acordeon">
+              <summary>Ingredientes</summary>
+
+              <a href="fermentables.html">Fermentables</a>
+              <a href="lupulo.html">Lúpulo</a>
+              <a href="agua.html">Agua</a>
+              <a href="levadura.html">Levadura</a>
+            </details>
+            <details open name="acordeon">
+              <summary>Procesos</summary>
+              <a href="molienda.html">Molienda</a>
+              <a href="macerado.html">Macerado</a>
+              <a href="hervido.html">Hervido</a>
+              <a href="fermentacion.html">Fermentación</a>
+              <a href="embotellado.html">Embotellado</a>
+              <a href="limpieza.html">Limpieza</a>
+            </details>
+            <details name="acordeon">
+              <summary><p>Diseño de recetas</p></summary>
+            </details>
+            <summary>Equipo</summary>
+          </div>
+        </div>
+      </div>
+
+      <div class="principal" id="principal">
+        <div class="principal-titolo">
+          <div class="principal-emblemo"></div>
+          <h1>Molienda</h1>
+        </div>
+        <div class="principal-retumilo">
+          <div><p>Anterior</p></div>
+          <div>
+            <p><a href="index.html">Home</a></p>
+          </div>
+          <div><p>Siguiente</p></div>
+        </div>
+        <div class="principal-korpo">
+          <p>
+            Vamos a necesitar moler la malta. Por motivos de higiene se
+            recomienda que esta actividad se lleve a cabo en un espacio
+            confinado para eliminar la cantidad de polvo en la sala de cocción,
+            dado que el polvo que produce la molienda contiene microorganismos
+            que podrían contaminar el mosto.
+          </p>
+
+          <h2 id="acondicionamiento-de-las-maltas">
+            <a href="#acondicionamiento-de-las-maltas"
+              >Acondicionamiento de la malta</a
+            >
+          </h2>
+
+          <p>
+            Antes de moler se realiza una operación de limpieza mecánica para
+            evitar que ningún elemento extraño (sobretodo piedras) entre en el
+            proceso de elaboración del mosto. Para ello entre nuestro espacio de
+            almacenamiento de malta y el molino tendremos un espacio para la
+            limpieza y el acondicionamiento del grano. En la industria se
+            emplean principalmente dos tipos de máquinas para este propósito:
+            Deschinadoras: Esta máquina es capaz de separar elementos con un
+            tamaño similar a los granos de malta pero más pesados (piedras,
+            vidrio, metales...) Para ello se usa un flujo de aire ascendente.
+            Cribadora: Tamices que con un vaiven separan impurezas ajenas a la
+            malta y más ligeras que la misma. Báscula: Imán: Separa cualquier
+            partícula metálica que se haya podido escapar. Se usa sobretodo para
+            proteger el molino.
+          </p>
+
+          <h2 id="principios-molienda">
+            <a href="#principios-molienda">Principios de la molienda</a>
+          </h2>
+
+          <p>
+            La molienda es imprescindible y muchas veces subestimada, pero es un
+            proceso que tiene una gran influencia en el rendimiento y la calidad
+            del mosto. El objetivo de la molienda es facilitar el contacto entre
+            la materia soluble de la malta y el agua. Cuanto menor sea el tamaño
+            de las partículas a las que reducimos la malta, más superficie de
+            contacto, y mayor de todo. ¿Cuanto más fino se muela la malta mejor?
+            Podría ser, pero lo fino que podamos hacer la molienda depende del
+            equipo que en etapas posteriores se utilice para separar el mosto de
+            los partículas sólidas. (Principalmente si se trata de una cuba
+            filtro o de un filtro prensa) También en función de si usamos una
+            cuba filtro o un filtro prensa se deberá adoptar un enfoque
+            diferente al aboradar la molienda: En el primer caso, se deberá
+            tratar de preservar la integridad de las envueltas (cascarilla del
+            grano) pues costituyen el principal elemento filtrante. Si por el
+            contrario se usa un filtro prensa moderno (de capa fina) se muele al
+            máximo.
+          </p>
+          <h2 id="tipos-molienda">
+            <a href="#tipos-molienda">Tipos de molienda</a>
+          </h2>
+          <p>
+            Como ya se ha dicho, la molienda es una operación básica que tiene
+            una influencia significativa en el resto del proceso de elaboración.
+            Dada su importancia, la molienda ha evolucionado con el paso del
+            tiempo configurándose diferentes formas de llevarla a cabo. Podemos
+            clasificarla en dos grandes grupos Molienda seca (gruesa o fina)
+            Molienda húmeda (por remojo o acondionada)
+          </p>
+          <h3>La molienda seca</h3>
+          <p>
+            Moler grueso o fino puede tener un efecto sobre la actividad
+            enzimática en el macerado. Así, un molido grueso dará lugar a una
+            reducción en la extracción de beta glucanos y en la viscosidad, sin
+            que el contenido de compuestos nitrogenados o azucares se vean
+            afectados.
+          </p>
+          <h3>Molienda seca acondicionada por vapor</h3>
+          <p>
+            Estamos ante un tipo de molienda seca en la cual la malta es
+            hidratada mediante la aplicación de vapor a baja presión o la
+            pulverización de agua. De esta manera la cáscara se volverá más
+            flexible y seguirá entera después de pasar por el molino, mientras
+            que el endospermo sigue seco por lo que se puede llegar a moler
+            finamente.
+          </p>
+          <h3>La molienda humeda</h3>
+          <p>
+            Como ya se ha comentado cuando se utiliza el sistema de cuba filtro
+            al cervecero le interesa preservar la integridad de la cascarilla de
+            la malta al molerla. Por ello, a comienzos de los años 60 del siglo
+            XX aparece la molienda humeda. En esta modalidad de molienda, se
+            proporciona en un primer paso humedad al grano para a continuación
+            proceder a su trituración. Este tipo de molienda da lugar acervezas
+            con mejor estabilidad de espuma y menores cantidades de nitrógeno y
+            polifenoles.
+          </p>
+          <h4>Molienda húmeda por remojo</h4>
+          <p>
+            Esta modalidad de molienda húmeda se basa en remojar la malta
+            durante 20-30 minutos con agua entre 30-50ºC recirculando el agua de
+            forma continua. Hecho esto, el agua se drena y se procede a moler la
+            malta. Es una práctica en deshuso
+          </p>
+
+          <h4>Molienda húmeda acondicionada</h4>
+          <p>
+            Se trata de un desarrollo llevado a cabo en los años 80 de la
+            molienda humeda por remojo. Se redujo los tiempos y se aumentó la
+            temperatura del agua. Es la más empleada en la actualidad.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

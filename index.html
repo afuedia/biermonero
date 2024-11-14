@@ -1,53 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="page-id" content="index" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projekto Biero</title>
-</head>
-<body>
-    <div class="chiuj">
-        <div class="lateral">
-            <h1>Apuntes sobre elaboración de cerveza</h1>
-            <h2 id="ingrediencoj">Ingredientes</h2>
-            <h3>Malta</h3>
-            <h3>Lúpulo</h3>
-            <h3>Agua</h3>
-            <h3>Levadura</h3>
-             <h2 id="procezoj">Procesos</h2>
-            <h3>Molienda</h3>
-             <h3>Macerado</h3>
-            <h3>Hervido</h3>
-            <h3>Fermentación</h3>
-            <h3>Embotellado</h3>
-             <h3>Limpieza</h3>
-            <h2>Diseño de recetas</h2>
-            <h2 id="procezoj">Equipo</h2>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="chiuj" id="chiuj">
+      <div class="lateral" id="lateral">
+        <div class="lateral-retoj" id="lateralRetoj">
+          <button onclick="ocultarIndice()" class="toggle-button" id="boton">
+            |←
+          </button>
         </div>
-        <div class="principal">
-            <h1>Fermentables</h1>
-                <p>Para hacer cerveza hay que conseguir una fuente de azúcares, principalmente malta de cebada, aunque no en exclusiva.
-                </p>
-                <h2>La malta</h2>
-                <p>La malta es el resultado de someter a un cereal a una serie de procesos: germinado, secado, tostado. Este proceso puede
-        dar lugar a una gran variedad de maltas diferentes, entre las que podemos destacar:</p>
-                <ul>
-                    <li>Malta base</li>
-                    <li>Maltas especiales</li>
-                    <li>Maltas tostadas</li>
-                    <li>Maltas especiales</li>
-                </ul>
-                <p>El principal cereal para hacer malta destinada a la eleboración de cerveza es la <strong>cebada</strong></p>
-                <h2>Los adjuntos</h2>
-                <p>Cuando en la elaboración de cerveza se emplea alguna fuente de azucares alternativa a la malta se dice que se está
-                    añadiendo un adjunto. Podemos diferenciar dos grandes tipos:
-                    <ul>
-                        <li>Adjunto de macerado: Principalmente cereales sin maltear</li>
-                        <li>Adjunto de olla: Principalmente siropes o azúcares</li>
-                    </ul>
-                </p>
+        <div class="lateral-izquierdo" id="lateral-izquierdo">
+          <div class="titolujo" id="titolujo">
+            <h1 class="titolo">Apuntes sobre elaboración de cerveza</h1>
+          </div>
+          <div class="ligujo" id="ligujo">
+            <details name="acordeon">
+              <summary>Ingredientes</summary>
+
+              <a href="fermentables.html">Fermentables</a>
+              <a href="lupulo.html">Lúpulo</a>
+              <a href="agua.html">Agua</a>
+              <a href="levadura.html">Levadura</a>
+            </details>
+            <details name="acordeon">
+              <summary>Procesos</summary>
+              <a href="molienda.html">Molienda</a>
+              <a href="macerado.html">Macerado</a>
+              <a href="hervido.html">Hervido</a>
+              <a href="fermentacion.html">Fermentación</a>
+              <a href="embotellado.html">Embotellado</a>
+              <a href="limpieza.html">Limpieza</a>
+            </details>
+            <details name="acordeon">
+              <summary><p>Diseño de recetas</p></summary>
+            </details>
+            <summary>Equipo</summary>
+          </div>
         </div>
+      </div>
+
+      <div class="principal" id="principal">
+        <div class="principal-titolo">
+          <div class="principal-emblemo"></div>
+          <h1>Projekto Biero</h1>
+        </div>
+        <hr />
+
+        <div class="principal-korpo">
+          <p>
+            ¡Bienvenido a nuestro sitio sobre cómo elaborar cerveza! 🍺 Aquí
+            encontrarás todo lo que necesitas saber para empezar tu viaje en el
+            mundo de la cerveza artesanal. Ya seas un principiante que quiere
+            aprender los fundamentos o un cervecero experimentado buscando
+            nuevas ideas y técnicas, tenemos recursos, consejos y guías
+            detalladas para ayudarte a crear cervezas únicas y deliciosas. Desde
+            las bases del proceso de elaboración hasta las recetas más
+            creativas, exploraremos todo lo que necesitas para dominar el arte
+            de la cerveza en casa. ¡Prepárate para disfrutar del sabor de tu
+            propia creación y sorprender a tus amigos con cervezas hechas con
+            pasión y dedicación! ¡Empecemos a elaborar cerveza juntos!
+          </p>
+        </div>
+      </div>
     </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
