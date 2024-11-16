@@ -5,12 +5,10 @@ function ocultarIndice() {
   const lateralizquierdo = document.getElementById("lateral-izquierdo");
   const principal = document.getElementById("principal");
   const boton = document.getElementById("boton");
-  const lateralRetoj = document.getElementById("lateralRetoj");
 
   principal.classList.toggle("otro");
   boton.classList.toggle("oculto");
   lateralizquierdo.classList.toggle("oculto");
-  lateralRetoj.classList.toggle("oculto");
   lateral.classList.toggle("oculto");
 }
 
@@ -24,6 +22,6 @@ const links = document.querySelectorAll("details a");
 links.forEach((link) => {
   const href = link.getAttribute("href").split(".")[0]; // Extrae solo la parte antes del .html
   if (href === pageId) {
-    link.style.backgroundColor = "#a52a2a80"; // Cambia el color de fondo
+    link.style.backgroundColor = "#1F447B80"; // Cambia el color de fondo
   }
 });

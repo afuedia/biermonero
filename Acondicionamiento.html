@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="page-id" content="acondicionamiento" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekto Biero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="chiuj" id="chiuj">
+      <div class="lateral" id="lateral">
+        <div class="lateral-retoj" id="lateralRetoj">
+          <button onclick="ocultarIndice()" class="toggle-button" id="boton">
+            |←
+          </button>
+        </div>
+        <div class="lateral-izquierdo" id="lateral-izquierdo">
+          <div class="titolujo" id="titolujo">
+            <h2 class="titolo">Apuntes sobre elaboración de cerveza</h2>
+          </div>
+          <div class="ligujo" id="ligujo">
+            <details name="acordeon">
+              <summary>Ingredientes</summary>
+
+              <a href="fermentables.html">Fermentables</a>
+              <a href="lupulo.html">Lúpulo</a>
+              <a href="agua.html">Agua</a>
+              <a href="levadura.html">Levadura</a>
+            </details>
+            <details open name="acordeon">
+              <summary>Procesos</summary>
+              <a href="molienda.html">Molienda</a>
+              <a href="macerado.html">Macerado</a>
+              <a href="hervido.html">Hervido</a>
+              <a href="Acondicionamiento.html">Acondicionamiento</a>
+              <a href="fermentacion.html">Fermentación</a>
+              <a href="embotellado.html">Embotellado</a>
+              <a href="limpieza.html">Limpieza</a>
+            </details>
+            <details name="acordeon">
+              <summary><p>Diseño de recetas</p></summary>
+            </details>
+            <summary>Equipo</summary>
+          </div>
+        </div>
+      </div>
+
+      <div class="principal" id="principal">
+        <div class="principal-titolo">
+          <h1>Acondicionamiento</h1>
+        </div>
+        <div class="principal-retumilo">
+          <div class="flecha-izquierda"><a href="hervido.html">Hervido</a></div>
+          <p class="birra-home"><a href="index.html">🍺</a></p>
+          <div class="flecha-derecha">
+            <a href="fermentacion.html">Fermentación</a>
+          </div>
+        </div>
+        <div class="principal-korpo">
+          <p>
+            Una vez que hemos terminado de hervir nuestro mosto tenemos que
+            acondicionarlo para que la siguiente fase, la fermentación, pueda
+            realizarse de manera óptima.
+          </p>
+          <p>
+            Dicho acondicionamiento se basa en la ejecución de las siguientes
+            operaciones:
+          </p>
+          <ul>
+            <li>Clarificación</li>
+            <li>Reducción de la temperatura</li>
+            <li>Oxigenación</li>
+          </ul>
+
+          <h2 id="clarificacion"><a href="#clarificacion">Clarificación</a></h2>
+
+          <h3>Separación del lúpulo</h3>
+          <p>
+            Se lleva a cabo haciendo pasar el mosto a través de un medio
+            tamizante
+          </p>
+
+          <h3>Separación del turbio grueso</h3>
+          <p>
+            Ya hemos visto que el turbio grueso, turbio en caliente o "turb" se
+            forma durante el hervido. Eliminarlo nos permite reducir la cantidad
+            de lípidos asociados al mismo, lo cual es importante de cara a la
+            calidad.
+          </p>
+
+          <p>Para la eliminación de dicho turbio se emplea:</p>
+          <ul>
+            <li>Decantación</li>
+            <li>Centrifugación</li>
+            <li>Tanque remolino</li>
+            <li>Filtración</li>
+          </ul>
+          <h4>Tanques decantadores</h4>
+
+          <h5>Bandeja de decantación</h5>
+          <p>
+            La bandeja de decantación es un depósito de poca profundidad y gran
+            extensión. Antiguamente era empleada para decantar y enfriar el
+            mosto, pero es un sistema abandonado debido a sus inconvenientes:
+            ocupa mucho espacio, aumenta el riesgo de infección del mosto, muy
+            lento como sistema de enfriado.
+          </p>
+          <h5>Tanque de mosto caliente</h5>
+          <p>
+            La bandeja de decantación fue sustituido por tanques cilíndricos o
+            cilindrocónicos. Dichos tanques cuentan con un tubo decantador con
+            flotador que extrae el mosto de la parte superior. En el siguiente
+            video podemos ver un ejemplo de esta tecnología de la marca "Meura".
+          </p>
+
+          <video width="640" height="360" controls>
+            <source src="videos/Decantador.MP4" />
+            Tu navegador no soporta la etiqueta de video.
+          </video>
+
+          <h4>Centrifugación</h4>
+          <h4>El tanque remolino (olla whirpool)</h4>
+          <p>
+            Desarrollado en los años 70 en Estados Unidos la olla whirpool es el
+            medio de separación de turbio grueso más usada en cervecería.
+          </p>
+          <p>
+            El sistema consiste en la formación de un remolino en el mosto para
+            provocar que las partículas sólidas en suspención, al acabar el
+            movimiento, acaben depositadas en el centro y fondo del recipiente,
+            formando una torta compacta.
+          </p>
+          <h2 id="enfriamiento"><a href="#enfriamiento">Clarificación</a></h2>
+          <h3>Sistemas abiertos</h3>
+          <p>
+            Estos sistemas, completamente en deshuso, exponen el mosto al aire
+            durante el enfriamiento. La bandeja de decantación de la que ya se
+            habló se podría encuadrar dentro de este tipo de sistemas. El
+            sistema abierto más conocido es el de película descendiente tipo
+            "Baudelot"
+          </p>
+          <h3>Sistemas cerrados</h3>
+          <p>Son los utilizados en la actualidad.</p>
+          <h4>Tipo tubular</h4>
+          <p>
+            Se trata de tubos concéntricos. Por el tubo interior circula el
+            mosto, y por el exterior y a contracorriente, la solución
+            refrigerante
+          </p>
+          <h4>Tipo placas</h4>
+          <p>Es el tipo de enfriador más utilizado en la actualidad.</p>
+          <h3></h3>
+          <h2 id="oxigenacion"><a href="#oxigenacion">Oxigenación</a></h2>
+          <p>
+            El oxígene va a jugar un papel crucial para la propagación de la
+            levadura en la primera etapa de la fermentación, por lo que una vez
+            enfriado el mosto procederemos a oxigenarlo. Cabe diferenciar la
+            incorporación de oxígeno en caliente, que produce oxidación
+            (fenómeno químico) de la incorporaciónde oxígeno en frio, que
+            produce oxigenación (fenómeno físico)
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

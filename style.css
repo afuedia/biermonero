@@ -7,14 +7,32 @@
 
   /* Tamaños de fuentes */
   --font-size-base: 16px;
-  --font-size-lg: 1.25rem;
-  --font-size-xl: 2rem;
-  --font-size-xxl: 3rem;
 
   /* Pesos de fuente */
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --font-weight-semibold: 600;
+
+  /* Tamaños de encabezados */
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.75rem;
+  --font-size-h4: 1.5rem;
+  --font-size-h5: 1.25rem;
+  --font-size-h6: 1.1rem;
+
+  /* Margen superior e inferior */
+  --margin-h1: 48px;
+  --margin-h2: 40px;
+  --margin-h3: 32px;
+  --margin-h4: 24px;
+  --margin-h5: 16px;
+  --margin-h6: 12px;
+
+  --color-fondo: #f1fc83;
+  --color-fondo2: #ebfb57;
+  --color-fuente: #102441;
+  --color-titulos: #030916;
 }
 
 @media (min-width: 768px) {
@@ -51,8 +69,9 @@ hr {
   justify-self: center;
 }
 
-h1 {
-  font-size: 2.5rem;
+.titolo {
+  text-align: center;
+  margin-top: 10px;
 }
 * {
   padding: 0;
@@ -62,6 +81,7 @@ html {
   width: 100vw;
   padding: 0;
   margin: 0;
+  font-size: var(--font-size-base);
 }
 
 body {
@@ -85,22 +105,21 @@ body {
 /* Lateral izquierdo */
 .lateral {
   align-items: center;
-  background-color: black;
-  background-image: url(biero\ -\ copia2.jpg);
-  background-size: cover;
+  background-color: var(--color-titulos);
   color: white;
   position: sticky;
   height: 100vh;
   top: 0;
   display: flex;
   flex-direction: row-reverse;
-  transition: width 0.3s ease;
-  overflow: hidden;
-  width: 500px;
+  transition: width 1s ease;
+  width: 450px;
 }
 
 .lateral.oculto {
-  width: auto;
+  width: 40px;
+  min-width: 40px;
+  transition: width 1s ease;
 }
 
 .lateral-izquierdo {
@@ -109,8 +128,7 @@ body {
   align-items: start;
   justify-content: start;
   height: 100%;
-  width: 95%;
-  transform: translateX(0);
+  width: 80%;
 }
 
 .lateral-izquierdo.oculto {
@@ -119,7 +137,6 @@ body {
   position: absolute;
   margin: 0;
   padding: 0;
-  transform: translateX(-100%);
 }
 
 .titolujo.oculto {
@@ -136,18 +153,15 @@ body {
   justify-content: end;
   height: 100%;
   margin: 0;
+  width: 40px;
 }
-.lateral-retoj.oculto {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
+
 .toggle-button {
   width: 40px;
   height: 40px;
-  background-color: black;
+  background-color: var(--color-titulos);
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   transform: rotate(0deg);
   transition: transform 1s ease;
   cursor: pointer;
@@ -169,35 +183,34 @@ a {
 /* Lateral derecho */
 .principal {
   width: 100%;
-  background-color: #171717;
+  background-color: var(--color-fondo);
   color: #aaaaaa;
   font-size: 22px;
   margin: 0;
   display: flex;
   flex-direction: column;
+  transition: width 0.5s ease;
 }
 
-.principal.otro {
-  width: 98%;
-}
-
-.principal-emblemo {
-  border: solid black;
-  width: 80%;
-  height: 40%;
-  margin: 40px;
-}
 .principal-titolo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("biero.jpg");
+  background-image: linear-gradient(
+      to top,
+      rgba(241, 252, 131, 1) 10%,
+      /* Inicio con opacidad completa */ rgba(241, 252, 131, 0.8) 15%,
+      /* Reducción gradual */ rgba(241, 252, 131, 0.3) 25%,
+      /* Más transparencia */ rgba(241, 252, 131, 0) 100%
+    ),
+    url("biero.jpg");
+  background-color: var(--color-fondo);
   width: 100%;
-  height: 280px;
+  height: 144px;
   margin: 0;
   padding: 0;
-  color: black;
+  color: var(--color-titulos);
 }
 
 .principal-retumilo {
@@ -211,20 +224,67 @@ a {
 }
 
 .principal-retumilo > div {
-  background-color: #333333;
-  height: 36px;
-  width: 100px;
+  background-color: var(--color-fondo2);
+  height: 48px;
+  width: 250px;
   display: flex;
   justify-content: center;
   justify-items: center;
   text-align: center;
   align-items: center;
   margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  color: var(--color-titulos);
 }
 
 .principal-retumilo > div > p {
   text-align: center;
   justify-self: center;
+  font-size: var(--font-size-base);
+}
+.birra-home {
+  font-size: xx-large;
+}
+.flecha-izquierda::before {
+  content: "";
+  position: absolute; /* Posicionarlo dentro del div */
+  top: 50%; /* Centrar verticalmente */
+  left: -9px; /* Alinear al borde izquierdo */
+  transform: translateY(
+    -50%
+  ); /* Ajustar posición para que quede perfectamente centrado */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 24px 10px 24px 0; /* Triángulo hacia la izquierda */
+  border-color: transparent var(--color-fondo2) transparent transparent;
+}
+
+.flecha-derecha::after {
+  content: "";
+  position: absolute; /* Posicionarlo dentro del div */
+  top: 50%; /* Centrar verticalmente */
+  right: -9px; /* Alinear al borde derecho */
+  transform: translateY(
+    -50%
+  ); /* Ajustar posición para que quede perfectamente centrado */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 24px 0 24px 10px; /* Triángulo hacia la derecha */
+  border-color: transparent transparent transparent var(--color-fondo2); /* Mismo color que el fondo del div */
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(10%);
+    opacity: 0; /* Opcional: Para que empiece invisible */
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1; /* Se vuelve completamente visible */
+  }
 }
 
 .principal-korpo {
@@ -232,17 +292,50 @@ a {
   max-width: 25cm;
   align-self: center;
   padding: 2%;
+  background-color: var(--color-fondo);
+  animation: slide-up 1s ease-out; /* Duración y suavizado */
+  position: relative; /* Asegúrate de usar esto si el elemento necesita posicionamiento relativo */
+  opacity: 0; /* Comienza invisible para suavizar la entrada */
+  animation-fill-mode: forwards;
 }
 
-.principal > h1,
-h2,
-h3 {
-  color: white;
-  margin: 48px 0;
+.principal h1 {
+  color: var(--color-titulos);
+  font-size: var(--font-size-h1);
+  margin: 48px 0; /* Mayor margen para el título más importante */
 }
 
-.principal > p {
+.principal h2 {
+  color: var(--color-titulos);
+  font-size: var(--font-size-h2);
+  margin: 40px 0; /* Margen ligeramente menor */
+}
+
+.principal h3 {
+  color: var(--color-titulos);
+  font-size: var(--font-size-h3);
+  margin: 32px 0;
+}
+
+.principal h4 {
+  color: var(--color-titulos);
+  font-size: var(--font-size-h4);
+  margin: 24px 0;
+}
+
+.principal h5 {
+  color: var(--color-titulos);
+  font-size: var(--font-size-h5);
+  margin: 16px 0; /* Menor margen para el título menos importante */
+}
+
+.principal p {
   margin-bottom: 20px;
+  color: var(--color-fuente);
+}
+
+.principal li {
+  color: var(--color-fuente);
 }
 
 table {
@@ -253,8 +346,8 @@ table {
   box-shadow: 2px 2px 8px #0004;
 }
 thead {
-  background-color: #1b355e;
-  border-color: #1b355e;
+  background-color: var(--color-titulos);
+  border-color: black;
   color: white;
   border-collapse: separate;
 }
@@ -274,6 +367,7 @@ thead th:nth-child(3) {
 td {
   padding-left: 1%;
   padding-right: 1%;
+  color: var(--color-fuente);
 }
 
 td:first-child {
@@ -293,26 +387,25 @@ td {
   letter-spacing: 1px;
 }
 tbody tr:nth-child(odd) {
-  background-color: #171717;
+  background-color: var(--color-fondo2);
 }
 
 tbody tr:nth-child(even) {
-  background-color: #1f1f1f;
+  background-color: var(--color-fondo);
 }
 
 .ligujo {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 100%;
   height: 80%;
   justify-content: start;
   justify-items: end;
-  padding-left: 5%;
-  overflow-y: auto;
+  margin-top: 20px;
 }
 
 .ligujo summary {
-  background-color: #171717;
+  background-color: var(--color-fuente);
   margin: 1%;
   width: 100%;
   height: 36px;
@@ -324,9 +417,9 @@ tbody tr:nth-child(even) {
   font-weight: 600;
 }
 .ligujo a {
-  background-color: #17171780;
+  background-color: #10244180;
   margin: 1%;
-  width: auto;
+  width: 100%;
   height: 36px;
   text-align: start;
   display: flex;
@@ -337,24 +430,26 @@ tbody tr:nth-child(even) {
 
 details {
   display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
 }
 
 summary {
   cursor: pointer;
+  width: 100%;
 }
 
 summary:hover {
-  background-color: #a52a2a;
+  background-color: #1f447b;
 }
 
 .ligujo a:hover {
-  background-color: brown;
+  background-color: #1f447b;
 }
 
 details[open] summary {
-  background-color: brown;
+  background-color: #1f447b;
 }
 /* Flecha en contenido colapsado */
 details summary::marker {
@@ -369,8 +464,4 @@ details[open] summary::marker {
 }
 .enlaces {
   position: relative;
-}
-
-.titolo {
-  text-align: center;
 }
